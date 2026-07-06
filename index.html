@@ -84,6 +84,8 @@
             color: #2c3e50;
             margin-top: 20px;
             margin-bottom: 10px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
         }
         
         .profile-info {
@@ -147,6 +149,7 @@
             background: #f9f9f9;
             padding: 20px;
             border-radius: 8px;
+            margin-bottom: 30px;
         }
         
         .research-interests ul {
@@ -166,6 +169,63 @@
             left: 0;
             color: #667eea;
             font-weight: bold;
+        }
+        
+        .publication-subsection {
+            margin: 25px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .publication-subsection h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .publication-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .publication-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .publication-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .publication-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .project-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .project-item h5 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+        
+        .project-item p {
+            color: #555;
+            font-size: 0.95em;
         }
         
         .award-list {
@@ -229,7 +289,7 @@
     <!-- Header -->
     <div class="header">
         <h1>Mushirah Tasnim</h1>
-        <p>PhD student | UTA</p>
+        <p>PhD student | UTA | Lecturer, BUET JIDPUS</p>
     </div>
     
     <!-- Navigation -->
@@ -237,9 +297,8 @@
         <ul>
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#research">EDUCATION</a></li>
-            <li><a href="#education">RESEARCH</a></li>
-            <li><a href="#awards">PUBLICATION</a></li>
+            <li><a href="#research">RESEARCH & PUBLICATIONS</a></li>
+            <li><a href="#education">EDUCATION</a></li>
             <li><a href="#awards">AWARDS</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -257,7 +316,8 @@
                 </div>
                 <div class="profile-text">
                     <p>
-                        Welcome to my homepage! I am a PhD student at University of Texas at Arlington (UTA). 
+                        Welcome to my homepage! I am a PhD student at University of Texas at Arlington (UTA) and a Lecturer at 
+                        Bangladesh University of Engineering and Technology - Jashore Institute of Development and Pedagogical Studies (BUET JIDPUS). 
                         My research focuses on Membrane Treatment Technology. I am passionate about 
                         Civil and Environmental Engineering and enjoy collaborating with colleagues across 
                         the world.
@@ -285,9 +345,12 @@
             </div>
         </section>
         
-        <!-- Research Section -->
+        <!-- Research & Publications Section -->
         <section class="section" id="research">
-            <h2>Research Interests</h2>
+            <h2>Research & Publications</h2>
+            
+            <!-- Research Interests Subsection -->
+            <h3>Research Interests</h3>
             <div class="research-interests">
                 <ul>
                     <li>Membrane Treatment Technology</li>
@@ -297,15 +360,46 @@
                     <li>Risk Assessment</li>
                 </ul>
             </div>
-        </section>
-
-          <!-- Publications Section -->
-        <section class="section" id="research">
-            <h2>Publications, Proceedings & Projects</h2>
-            <div class="publications">
-                <ul>
-                    <li>1.	Tasnim, M., Rahman, A., Sultana, M. Rahman, S.M. (2025). Spatiotemporal Distribution of Antibiotic Concentration and Their Association with Physiochemical Parameters of Buriganga River. ACS Spring 2026.y</li>
+            
+            <!-- Publications Subsection -->
+            <div class="publication-subsection">
+                <h4>Publications</h4>
+                <ul class="publication-list">
+                    <li>Tasnim, M., Rahman, A., Sultana, M., Rahman, S.M. (2025). Spatiotemporal Distribution of Antibiotic Concentration and Their Association with Physiochemical Parameters of Buriganga River. ACS Spring 2026.</li>
                 </ul>
+            </div>
+            
+            <!-- Conference Proceedings Subsection -->
+            <div class="publication-subsection">
+                <h4>Conference Proceedings</h4>
+                <ul class="publication-list">
+                    <li>[Add your conference proceedings here]</li>
+                </ul>
+            </div>
+            
+            <!-- Presentations Subsection -->
+            <div class="publication-subsection">
+                <h4>Presentations</h4>
+                <ul class="publication-list">
+                    <li>[Add your presentations here]</li>
+                </ul>
+            </div>
+            
+            <!-- Projects Subsection -->
+            <div class="publication-subsection">
+                <h4>Projects</h4>
+                <div class="project-item">
+                    <h5>Project Name 1</h5>
+                    <p>Brief description of the project, including objectives, methodologies, and key outcomes. Add relevant details about your involvement and contributions.</p>
+                </div>
+                <div class="project-item">
+                    <h5>Project Name 2</h5>
+                    <p>Brief description of the project, including objectives, methodologies, and key outcomes. Add relevant details about your involvement and contributions.</p>
+                </div>
+                <div class="project-item">
+                    <h5>Project Name 3</h5>
+                    <p>Brief description of the project, including objectives, methodologies, and key outcomes. Add relevant details about your involvement and contributions.</p>
+                </div>
             </div>
         </section>
         
@@ -346,9 +440,6 @@
                     <strong>Email:</strong> <a href="mailto:your.email@institution.edu">your.email@institution.edu</a>
                 </p>
                 <p>
-                    <strong>Phone:</strong> +1 (XXX) XXX-XXXX
-                </p>
-                <p>
                     <strong>Office:</strong> Building Name, Room Number
                 </p>
                 <p>
@@ -374,3 +465,4 @@
     </script>
 </body>
 </html>
+
