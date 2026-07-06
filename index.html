@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #2c3e50;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            transition: background 0.3s;
+        }
+        
+        nav a:hover {
+            background: #667eea;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .section h3 {
+            color: #2c3e50;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .profile-info {
+            display: flex;
+            gap: 30px;
+            margin: 30px 0;
+            align-items: flex-start;
+        }
+        
+        .profile-image {
+            flex-shrink: 0;
+        }
+        
+        .profile-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .profile-text {
+            flex-grow: 1;
+        }
+        
+        .credentials {
+            background: #f5f5f5;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+        
+        .credentials p {
+            margin: 8px 0;
+        }
+        
+        .credentials strong {
+            color: #667eea;
+        }
+        
+        .contact-info {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .contact-info p {
+            margin: 8px 0;
+        }
+        
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .research-interests {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .research-interests ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .research-interests li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .research-interests li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .award-list {
+            list-style: none;
+        }
+        
+        .award-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .award-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .award-year {
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .profile-info {
+                flex-direction: column;
+            }
+            
+            .profile-image img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Your Full Name</h1>
+        <p>Your Title | Your Institution</p>
+    </div>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#research">RESEARCH</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#awards">AWARDS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <div class="profile-info">
+                <div class="profile-image">
+                    <img src="profile-photo.jpg" alt="Profile Photo">
+                </div>
+                <div class="profile-text">
+                    <p>
+                        Welcome to my homepage! I am a [your title] at [your institution]. 
+                        My research focuses on [your research area]. I am passionate about 
+                        [your interests] and enjoy collaborating with colleagues across 
+                        [your field].
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <h2>Education & Credentials</h2>
+            <div class="credentials">
+                <p>
+                    <strong>Ph.D.</strong> in [Your Discipline]<br>
+                    [University Name], [Country] ([Year])
+                </p>
+                <p>
+                    <strong>Master's Degree</strong> in [Your Discipline]<br>
+                    [University Name], [Country] ([Year])
+                </p>
+                <p>
+                    <strong>Bachelor's Degree</strong> in [Your Discipline]<br>
+                    [University Name], [Country] ([Year])
+                </p>
+                <p>
+                    <strong>Professional License</strong><br>
+                    [License Name], [Issuing Organization] ([Year])
+                </p>
+            </div>
+        </section>
+        
+        <!-- Research Section -->
+        <section class="section" id="research">
+            <h2>Research Interests</h2>
+            <div class="research-interests">
+                <ul>
+                    <li>Research Interest #1</li>
+                    <li>Research Interest #2</li>
+                    <li>Research Interest #3</li>
+                    <li>Research Interest #4</li>
+                    <li>Research Interest #5</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Awards Section -->
+        <section class="section" id="awards">
+            <h2>Awards & Recognition</h2>
+            <ul class="award-list">
+                <li>
+                    <span class="award-year">[Year]</span>
+                    Award Name, Awarding Organization
+                </li>
+                <li>
+                    <span class="award-year">[Year]</span>
+                    Award Name, Awarding Organization
+                </li>
+                <li>
+                    <span class="award-year">[Year]</span>
+                    Award Name, Awarding Organization
+                </li>
+                <li>
+                    <span class="award-year">[Year]</span>
+                    Award Name, Awarding Organization
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p>
+                    <strong>Department:</strong><br>
+                    Your Department<br>
+                    Your Institution<br>
+                    City, State, ZIP
+                </p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:your.email@institution.edu">your.email@institution.edu</a>
+                </p>
+                <p>
+                    <strong>Phone:</strong> +1 (XXX) XXX-XXXX
+                </p>
+                <p>
+                    <strong>Office:</strong> Building Name, Room Number
+                </p>
+                <p>
+                    <strong>Links:</strong><br>
+                    <a href="https://scholar.google.com" target="_blank">Google Scholar</a> | 
+                    <a href="https://orcid.org" target="_blank">ORCID</a> | 
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                </p>
+            </div>
+        </section>
+        
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        <p><small>Last updated: <span id="date"></span></small></p>
+    </footer>
+    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
